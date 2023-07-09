@@ -1,0 +1,99 @@
+{
+	"info": {
+		"_postman_id": "0de34050-28cb-49d9-9295-fe8281940e53",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"StoredProcName\":\"AddEmployee\",\r\n    \"Employee\":{\r\n        \"Name\":\"Shivesh Pandey\",\r\n        \"Age\":25\r\n        }\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44386/api/values/post",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44386",
+					"path": [
+						"api",
+						"values",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"StoredProcName\":\"AddEmployee\",\r\n    \"Employee\":{\r\n        \"Name\":\"Shivesh Pandey\",\r\n        \"Age\":25,\r\n        \"Id\":1\r\n        }\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:44386/api/values/post",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44386",
+					"path": [
+						"api",
+						"values",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetById",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllDataByStoredProcedureName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44386/api/values/get/GETEMPLOYEES",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44386",
+					"path": [
+						"api",
+						"values",
+						"get",
+						"GETEMPLOYEES"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
